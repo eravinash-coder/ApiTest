@@ -3,7 +3,7 @@ $(document).ready(function() {
         var login_id = $('#login_id').val();
         var password = $('#password').val();
         $.ajax({
-            url: 'https://qa2.sunbasedata.com/sunbase/portal/api/assignment_auth.jsp',
+            url: 'https://cors-anywhere.herokuapp.com/https://qa2.sunbasedata.com/sunbase/portal/api/assignment_auth.jsp',
             type: 'POST',
             headers: {
               "Content-Type": "application/json;charset=UTF-8",
