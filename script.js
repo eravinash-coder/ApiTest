@@ -5,14 +5,6 @@ $(document).ready(function() {
         $.ajax({
             url: 'https://cors-anywhere.herokuapp.com/https://qa2.sunbasedata.com/sunbase/portal/api/assignment_auth.jsp',
             type: 'POST',
-            headers: {
-              "Content-Type": "application/json;charset=UTF-8",
-              "Access-Control-Allow-Origin": "*",
-              "Access-Control-Allow-Methods": "GET,HEAD, POST, OPTIONS",
-              "Access-Control-Max-Age": "1000",
-              "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With",
-              Vary: "Origin",
-            },
             data: JSON.stringify({
                 login_id: login_id,
                 password: password
